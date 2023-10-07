@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TukangIn" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/brown</item>
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorTertiary">@color/black</item>
+    </style>
+</resources>

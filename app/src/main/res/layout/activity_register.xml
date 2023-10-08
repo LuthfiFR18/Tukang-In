@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
     android:background="@drawable/regisbg">
 
     <TextView
@@ -11,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="140dp"
         android:fontFamily="@font/robotobold"
-        android:text="Masuk"
+        android:text="Daftar"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         android:id="@+id/txtmasuk">
@@ -23,7 +26,21 @@
         android:orientation="vertical"
         android:layout_below="@id/txtmasuk"
         android:padding="50dp"
-        android:id="@+id/layout1">
+        android:id="@+id/layout1"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/Rname"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/btn"
+            android:hint="Nama"
+            android:paddingLeft="40dp"
+            android:textColorHint="@color/hint"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/robotomedium"
+
+            ></EditText>
 
         <EditText
             android:id="@+id/loginEmail"
@@ -31,7 +48,7 @@
             android:layout_height="57dp"
             android:background="@drawable/btn"
             android:hint="Email/No-Telp"
-            android:paddingLeft="50dp"
+            android:paddingLeft="40dp"
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
@@ -39,40 +56,42 @@
 
         <EditText
             android:id="@+id/loginPass"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/btn"
             android:hint="Password"
-            android:paddingLeft="50dp"
+            android:paddingLeft="40dp"
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
             ></EditText>
 
-        <TextView
+        <EditText
+            android:id="@+id/ConfirmPass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lupa Password?"
-            android:textColor="@color/white"
+            android:layout_height="57dp"
+            android:background="@drawable/btn"
+            android:hint="Konfirmasi Password"
+            android:paddingLeft="40dp"
+            android:textColorHint="@color/hint"
+            android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
-            android:paddingLeft="25dp"
-            ></TextView>
+            ></EditText>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layout1"
-        android:layout_marginTop="35dp"
         android:orientation="vertical"
-        android:id="@+id/layout2">
+        android:id="@+id/layout2"
+        android:gravity="center">
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Masuk dengan Google"
+            android:text="Daftar dengan Google"
             android:textColor="@color/white"
             android:fontFamily="@font/robotomedium"
             android:gravity="center"
@@ -84,8 +103,8 @@
             android:layout_width="136dp"
             android:layout_height="51dp"
             android:background="@drawable/btnonclick"
-            android:layout_marginLeft="135dp"
-            android:hint="Masuk"
+            android:hint="Daftar"
+            android:textSize="18dp"
             android:textColorHint="@color/brown"
             android:fontFamily="@font/robotomedium"
             android:paddingBottom="10dp"
@@ -106,7 +125,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Belum punya akun?"
+            android:text="Sudah punya akun?"
             android:textColor="@color/white"
             android:fontFamily="@font/robotomedium"
 
@@ -115,7 +134,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrasi"
+            android:text="Masuk"
             android:textColor="@color/black"
             android:fontFamily="@font/robotomedium"
 
@@ -123,13 +142,6 @@
 
 
     </LinearLayout>
-
-
-
-
-
-
-
 
 
 </RelativeLayout>

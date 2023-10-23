@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="brown">#946B03</color>
     <color name="hint">#96B7C5</color>
+    <color name="toolbar">#D9D9D9</color>
 </resources>

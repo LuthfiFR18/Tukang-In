@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="140dp"
         android:fontFamily="@font/robotobold"
-        android:text="Masuk"
+        android:text="@string/masuk"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         android:id="@+id/txtmasuk">
@@ -30,12 +30,11 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/btn"
-            android:hint="Email/No-Telp"
+            android:hint="@string/email_notelp"
             android:paddingLeft="50dp"
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
-            android:fontFamily="@font/robotomedium"
-            ></EditText>
+            android:fontFamily="@font/robotomedium" />
 
         <EditText
             android:id="@+id/loginPass"
@@ -48,16 +47,16 @@
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
-            ></EditText>
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lupa Password?"
+            android:text="@string/lupa_password"
             android:textColor="@color/white"
             android:fontFamily="@font/robotomedium"
             android:paddingLeft="25dp"
-            ></TextView>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -72,12 +71,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Masuk dengan Google"
+            android:text="@string/masuk_dengan_google"
             android:textColor="@color/white"
             android:fontFamily="@font/robotomedium"
             android:gravity="center"
             android:layout_marginBottom="10dp"
-            ></TextView>
+            />
 
         <Button
 
@@ -85,11 +84,11 @@
             android:layout_height="51dp"
             android:background="@drawable/btnonclick"
             android:layout_marginLeft="135dp"
-            android:hint="Masuk"
+            android:hint="@string/masuk"
             android:textColorHint="@color/brown"
             android:fontFamily="@font/robotomedium"
             android:paddingBottom="10dp"
-            ></Button>
+            />
 
     </LinearLayout>
 
@@ -110,16 +109,16 @@
             android:textColor="@color/white"
             android:fontFamily="@font/robotomedium"
 
-            ></TextView>
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrasi"
+            android:text="@string/registrasi"
             android:textColor="@color/black"
             android:fontFamily="@font/robotomedium"
 
-            ></TextView>
+            />
 
 
     </LinearLayout>

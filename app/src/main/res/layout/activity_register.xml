@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
-    android:background="@drawable/regisbg">
+    android:background="@drawable/pngframe">
 
     <TextView
 
@@ -32,7 +32,7 @@
         <EditText
             android:id="@+id/Rname"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/btn"
             android:hint="Nama"
             android:paddingLeft="40dp"
@@ -40,43 +40,51 @@
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
 
-            ></EditText>
+            />
 
         <EditText
             android:id="@+id/loginEmail"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/btn"
             android:hint="Email/No-Telp"
             android:paddingLeft="40dp"
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
-            ></EditText>
+            />
 
         <EditText
-            android:id="@+id/loginPass"
+            android:id="@+id/regisPass"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/btn"
             android:hint="Password"
+            android:inputType="textPassword"
             android:paddingLeft="40dp"
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
-            ></EditText>
+            />
 
         <EditText
             android:id="@+id/ConfirmPass"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/btn"
             android:hint="Konfirmasi Password"
+            android:inputType="textPassword"
             android:paddingLeft="40dp"
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
-            ></EditText>
+            />
+        <TextView
+            android:id="@+id/passwordMatchText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"/>
     </LinearLayout>
 
     <LinearLayout
@@ -89,17 +97,18 @@
 
 
         <TextView
+            android:id="@+id/txtdaftardengangoogle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Daftar dengan Google"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="@font/robotomedium"
             android:gravity="center"
             android:layout_marginBottom="10dp"
-            ></TextView>
+            />
 
         <Button
-
+            android:id="@+id/btnDaftar1"
             android:layout_width="136dp"
             android:layout_height="51dp"
             android:background="@drawable/btnonclick"
@@ -108,7 +117,7 @@
             android:textColorHint="@color/brown"
             android:fontFamily="@font/robotomedium"
             android:paddingBottom="10dp"
-            ></Button>
+            />
 
     </LinearLayout>
 
@@ -126,19 +135,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sudah punya akun?"
-            android:textColor="@color/white"
-            android:fontFamily="@font/robotomedium"
-
-            ></TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Masuk"
             android:textColor="@color/black"
             android:fontFamily="@font/robotomedium"
 
-            ></TextView>
+            />
+
+        <TextView
+            android:id="@+id/txtMasuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textColor="@color/brown"
+            android:fontFamily="@font/robotomedium"
+
+            />
 
 
     </LinearLayout>

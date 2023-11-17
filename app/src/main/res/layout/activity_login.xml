@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/regisbg">
+    android:background="@drawable/pngframe">
 
     <TextView
 
@@ -14,14 +14,14 @@
         android:text="@string/masuk"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
-        android:id="@+id/txtmasuk">
+        android:id="@+id/masuk">
     </TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/txtmasuk"
+        android:layout_below="@id/masuk"
         android:padding="50dp"
         android:id="@+id/layout1">
 
@@ -50,10 +50,11 @@
             />
 
         <TextView
+            android:id="@+id/txtlupapass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lupa_password"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="@font/robotomedium"
             android:paddingLeft="25dp"
             />
@@ -69,17 +70,18 @@
 
 
         <TextView
+            android:id="@+id/txtmasukdengangoogle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/masuk_dengan_google"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="@font/robotomedium"
             android:gravity="center"
             android:layout_marginBottom="10dp"
             />
 
         <Button
-
+            android:id="@+id/btnmasuk1"
             android:layout_width="136dp"
             android:layout_height="51dp"
             android:background="@drawable/btnonclick"
@@ -106,16 +108,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Belum punya akun?"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="@font/robotomedium"
 
             />
 
         <TextView
+            android:id="@+id/txtregistrasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/registrasi"
-            android:textColor="@color/black"
+            android:textColor="@color/brown"
             android:fontFamily="@font/robotomedium"
 
             />

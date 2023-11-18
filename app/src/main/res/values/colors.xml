@@ -7,4 +7,5 @@
     <color name="toolbar">#D9D9D9</color>
     <color name="red">#FF0000</color>
     <color name="neon_green">#39FF14</color>
+    <color name="chat_background">#ffeab4</color>
 </resources>

@@ -7,4 +7,8 @@
     <string name="email_notelp">Email/No-Telp</string>
     <string name="registrasi">Registrasi</string>
     <string name="masuk">Masuk</string>
+
+        <string name="feature_name">chat</string>
+        <string name="input_placeholder">Write a message</string>
+
 </resources>

@@ -33,6 +33,7 @@
             android:hint="@string/email_notelp"
             android:paddingLeft="50dp"
             android:textColorHint="@color/hint"
+            android:textColor="@color/black"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium" />
 
@@ -44,6 +45,7 @@
             android:background="@drawable/btn"
             android:hint="Password"
             android:paddingLeft="50dp"
+            android:textColor="@color/black"
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"

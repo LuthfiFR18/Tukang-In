@@ -11,7 +11,7 @@
         android:id="@+id/avatar"
         android:layout_alignParentLeft="true"
         android:scaleType="centerInside"
-        android:background="@drawable/shape_circle"
+        android:background="@drawable/circle"
         android:layout_width="34dp"
         android:layout_height="34dp" />
 
@@ -30,12 +30,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/message_body"
         android:layout_below="@+id/name"
+        android:textColor="@color/black"
         android:layout_alignLeft="@+id/name"
-        android:background="@drawable/shape_rectangle_theirmessage"
+        android:background="@drawable/their_message"
         android:paddingVertical="12dp"
         android:paddingHorizontal="16dp"
         android:elevation="2dp"
         android:textSize="18dp"
         android:text="How are you doing? This is a long message that should probably wrap."
         />
+
 </RelativeLayout>

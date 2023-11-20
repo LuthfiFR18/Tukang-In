@@ -133,14 +133,14 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="70dp">
+        android:layout_height="match_parent"
+        android:gravity="center">
 
         <Button
             android:id="@+id/button_chat"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
@@ -152,13 +152,14 @@
 
         <Button
             android:id="@+id/button_Booking"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:layout_toRightOf="@+id/button_chat"
+            android:layout_toEndOf="@+id/button_chat"
             android:backgroundTint="@color/white"
             android:contentDescription="@string/Booking"
             android:drawableStart="@drawable/ic_chat_24"

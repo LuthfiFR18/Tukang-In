@@ -7,8 +7,12 @@
     <string name="email_notelp">Email/No-Telp</string>
     <string name="registrasi">Registrasi</string>
     <string name="masuk">Masuk</string>
-
-        <string name="feature_name">chat</string>
-        <string name="input_placeholder">Write a message</string>
-
+    <string name="App_name">Tukang-in</string>
+    <string name="desc">Terpercaya</string>
+    <string name="tukang_name">Nama tukang</string>
+    <string name="input_placeholder">Write a message</string>
+    <string name="chat">Chat</string>
+    <string name="Booking">Booking</string>
+    <integer name="rating">4</integer>
+    <integer name="jarak">12</integer>
 </resources>

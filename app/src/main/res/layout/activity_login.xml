@@ -84,8 +84,8 @@
 
         <Button
             android:id="@+id/btnmasuk1"
-            android:layout_width="136dp"
-            android:layout_height="51dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/btnonclick"
             android:layout_marginLeft="135dp"
             android:hint="@string/masuk"

@@ -39,8 +39,7 @@
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
-
-            />
+            android:inputType="textPersonName"/>
 
         <EditText
             android:id="@+id/loginEmail"
@@ -52,7 +51,7 @@
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
-            />
+            android:inputType="textEmailAddress"/>
 
         <EditText
             android:id="@+id/regisPass"

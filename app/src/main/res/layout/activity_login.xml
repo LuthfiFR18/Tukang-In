@@ -30,12 +30,13 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/btn"
-            android:hint="@string/email_notelp"
+            android:hint="@string/email"
             android:paddingLeft="50dp"
             android:textColorHint="@color/hint"
             android:textColor="@color/black"
             android:paddingBottom="10dp"
-            android:fontFamily="@font/robotomedium" />
+            android:fontFamily="@font/robotomedium"
+            android:inputType="textEmailAddress|textNoSuggestions"/>
 
         <EditText
             android:id="@+id/loginPass"
@@ -49,7 +50,7 @@
             android:textColorHint="@color/hint"
             android:paddingBottom="10dp"
             android:fontFamily="@font/robotomedium"
-            />
+            android:inputType="textPassword|textNoSuggestions"/>
 
         <TextView
             android:id="@+id/txtlupapass"

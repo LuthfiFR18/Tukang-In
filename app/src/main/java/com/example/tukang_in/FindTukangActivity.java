@@ -24,6 +24,7 @@ public class FindTukangActivity extends AppCompatActivity {
         String[] nameList = {"cnunk","kafka","JtKz"};
         String[] descList = {"Terpercaya","Terpercaya","Terpercaya"};
         String[] alamatList = {"JL.mangga no.8","JL.mangga no.8","JL.mangga no.8"};
+        String[] hargaList = {"100.000 - 350.000","100.000 - 350.000","100.000 - 350.000"};
         for (int i = 0; i < imageList.length; i++) {
             listData = new ListData(nameList[i], descList[i],alamatList[i], ratingList[i], imageList[i], jarakList[i]);
             dataArrayList.add(listData);
@@ -35,12 +36,13 @@ public class FindTukangActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(FindTukangActivity.this, TukangDetailedActivity.class);
-                intent.putExtra("name", nameList[i]);
-                intent.putExtra("tukangdesc", descList[i]);
-                intent.putExtra("rating", ratingList[i]);
-                intent.putExtra("alamat", alamatList[i]);
+                intent.putExtra("Name", nameList[i]);
+                intent.putExtra("Deskripsi", descList[i]);
+                intent.putExtra("Rating", ratingList[i]);
+                intent.putExtra("Alamat", alamatList[i]);
                 intent.putExtra("image", imageList[i]);
-                intent.putExtra("jarak", jarakList[i]);
+                intent.putExtra("Jarak", jarakList[i]);
+                intent.putExtra("Perkiraan Harga", hargaList[i]);
                 startActivity(intent);
             }
         });

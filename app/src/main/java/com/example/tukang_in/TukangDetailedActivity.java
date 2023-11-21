@@ -14,10 +14,11 @@ public class TukangDetailedActivity extends AppCompatActivity {
         Intent intent = this.getIntent();
         if (intent != null){
             String name = intent.getStringExtra("Name");
-            String desc = intent.getStringExtra("Deskirpsi");
+            String desc = intent.getStringExtra("Deskripsi");
             String alamat = intent.getStringExtra("Alamat");
             String perkiraanharga = intent.getStringExtra("Perkiraan Harga");
             String rating = intent.getStringExtra("Rating");
+            String jarak = intent.getStringExtra("Jarak");
             int image = intent.getIntExtra("image", R.drawable.bludgotbraindamage);
             binding.detailName.setText(name);
             binding.alamat.setText(alamat);
@@ -25,6 +26,7 @@ public class TukangDetailedActivity extends AppCompatActivity {
             binding.ratingnumber.setText(rating);
             binding.perkiraanharga.setText(perkiraanharga);
             binding.detailImage.setImageResource(image);
+            binding.detailjarak.setText(jarak);
         }
     }
 }

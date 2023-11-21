@@ -13,6 +13,6 @@
     <string name="input_placeholder">Write a message</string>
     <string name="chat">Chat</string>
     <string name="Booking">Booking</string>
-    <integer name="rating">4</integer>
-    <integer name="jarak">12</integer>
+    <string name="rating">4</string>
+    <string name="jarak">12Km</string>
 </resources>

@@ -17,7 +17,7 @@ public class TukangDetailedActivity extends AppCompatActivity {
             String desc = intent.getStringExtra("Deskirpsi");
             String alamat = intent.getStringExtra("Alamat");
             String perkiraanharga = intent.getStringExtra("Perkiraan Harga");
-            int rating = intent.getIntExtra("Rating",R.integer.rating);
+            String rating = intent.getStringExtra("Rating");
             int image = intent.getIntExtra("image", R.drawable.bludgotbraindamage);
             binding.detailName.setText(name);
             binding.alamat.setText(alamat);

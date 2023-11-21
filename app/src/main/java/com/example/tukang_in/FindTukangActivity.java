@@ -19,8 +19,8 @@ public class FindTukangActivity extends AppCompatActivity {
         binding = ActivityFindTukangBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         int[] imageList = {R.drawable.santaidulugasih, R.drawable.lethimcook, R.drawable.bludgotbraindamage};
-        int[] ratingList = {4,5,3};
-        int[] jarakList = {11,15,21};
+        int[] ratingList = {R.string.rating,R.string.rating,R.string.rating};
+        int[] jarakList = {R.string.jarak,R.string.jarak,R.string.jarak};
         String[] nameList = {"cnunk","kafka","JtKz"};
         String[] descList = {"Terpercaya","Terpercaya","Terpercaya"};
         String[] alamatList = {"JL.mangga no.8","JL.mangga no.8","JL.mangga no.8"};

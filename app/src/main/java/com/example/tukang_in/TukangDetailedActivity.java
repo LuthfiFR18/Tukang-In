@@ -13,17 +13,17 @@ public class TukangDetailedActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         Intent intent = this.getIntent();
         if (intent != null){
-            String name = intent.getStringExtra("name");
-            String desc = intent.getStringExtra("desc");
-            String alamat = intent.getStringExtra("alamat");
-            int rating = intent.getIntExtra("rating",R.integer.rating);
-            int jarak = intent.getIntExtra("jarak", R.integer.jarak);
+            String name = intent.getStringExtra("Name");
+            String desc = intent.getStringExtra("Deskirpsi");
+            String alamat = intent.getStringExtra("Alamat");
+            String perkiraanharga = intent.getStringExtra("Perkiraan Harga");
+            int rating = intent.getIntExtra("Rating",R.integer.rating);
             int image = intent.getIntExtra("image", R.drawable.bludgotbraindamage);
             binding.detailName.setText(name);
             binding.alamat.setText(alamat);
             binding.detailDesc.setText(desc);
             binding.ratingnumber.setText(rating);
-            binding.perkiraanharga.setText("Perkiraan Harga: ");
+            binding.perkiraanharga.setText(perkiraanharga);
             binding.detailImage.setImageResource(image);
         }
     }

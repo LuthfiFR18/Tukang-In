@@ -26,12 +26,14 @@ public class ListAdapter extends ArrayAdapter<ListData> {
         TextView listName = view.findViewById(R.id.listName);
         TextView listDesc = view.findViewById(R.id.tukangdesc);
         TextView listRating = view.findViewById(R.id.ratingnumber);
-        TextView ListJarak = view.findViewById(R.id.jarak);
+        TextView listJarak = view.findViewById(R.id.jarak);
+        TextView listAlamat = view.findViewById(R.id.alamat);
         listImage.setImageResource(listData.image);
         listName.setText(listData.tukangname);
-        listRating.setText(listData.rating);
-        listDesc.setText(listData.jarak);
         listDesc.setText(listData.tukangdesc);
+        listRating.setText(listData.rating);
+        listJarak.setText(listData.jarak);
+        listAlamat.setText(listData.alamat);
         return view;
     }
 }

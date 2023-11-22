@@ -12,8 +12,11 @@ import java.util.ArrayList;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 public class ListAdapter extends ArrayAdapter<ListData> {
+
     public ListAdapter(@NonNull Context context, ArrayList<ListData> dataArrayList) {
+
         super(context, R.layout.list_tukang, dataArrayList);
+
     }
     @NonNull
     @Override
@@ -36,4 +39,6 @@ public class ListAdapter extends ArrayAdapter<ListData> {
         listAlamat.setText(listData.alamat);
         return view;
     }
+
+
 }

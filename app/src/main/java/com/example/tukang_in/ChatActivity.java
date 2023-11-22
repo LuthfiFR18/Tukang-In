@@ -2,6 +2,7 @@ package com.example.tukang_in;
 
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -74,6 +75,7 @@ public class ChatActivity extends AppCompatActivity implements RoomListener {
         if (message.length() > 0) {
             scaledrone.publish(roomName, message);
             editText.getText().clear();
+            Log.d("TAG", "test: " + message);
         }
     }
 

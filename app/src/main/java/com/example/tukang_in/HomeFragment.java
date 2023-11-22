@@ -103,6 +103,9 @@ public class HomeFragment extends Fragment {
         if (name == R.id.action_bar_profile){
             startActivity(new Intent(getActivity(), ChatActivity.class));
         }
+        else{
+            startActivity(new Intent(getActivity(), FindTukangActivity.class));
+        }
         return super.onOptionsItemSelected(item);
 
 

@@ -15,6 +15,20 @@
         android:id="@+id/layoutlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ratingnumber"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:text="TextView" />
+
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -70,19 +84,22 @@
             android:layout_below="@id/tukangdesc"
             android:layout_marginStart="100dp"/>
 
-        <RatingBar
-            android:id="@+id/ratingbar"
-            style="?android:ratingBarStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tukangdesc"
-            android:layout_marginStart="@id/ratingnumber"
-            android:layout_marginTop="@id/ratingnumber"
-            android:layout_marginEnd="@id/ratingnumber"
-            android:layout_marginBottom="@id/ratingnumber"
-            android:layout_toEndOf="@id/ratingnumber"
-            android:rating="4.1"
-            android:paddingBottom="10dp"/>
+<!--        <RatingBar-->
+<!--            android:id="@+id/ratingbar"-->
+<!--            style="@style/Theme.AppCompat"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tukangdesc"-->
+<!--            android:layout_marginStart="@id/ratingnumber"/>-->
+<!--            android:layout_marginTop="@id/ratingnumber"-->
+<!--            android:layout_marginEnd="@id/ratingnumber"-->
+<!--            android:layout_marginBottom="@id/ratingnumber"-->
+<!--            android:layout_toEndOf="@id/ratingnumber"-->
+<!--            android:rating="4.1"-->
+<!--            android:paddingBottom="10dp"-->
+
+
+<!--            />-->
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

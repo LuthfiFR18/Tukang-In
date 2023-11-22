@@ -2,9 +2,9 @@ package com.example.tukang_in;
 
 public class ListData {
     String tukangname, tukangdesc, alamat;
-    int rating,jarak;
+    String rating,jarak;
     int image;
-    public ListData(String name, String desc,String alamat, int rating, int jarak, int image) {
+    public ListData(String name, String desc,String alamat, String rating, int image, String jarak) {
         this.tukangname =name;
         this.tukangdesc = desc;
         this.alamat = alamat;

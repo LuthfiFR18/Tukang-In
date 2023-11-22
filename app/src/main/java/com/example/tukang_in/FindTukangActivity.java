@@ -4,6 +4,7 @@ package com.example.tukang_in;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import com.example.tukang_in.databinding.ActivityFindTukangBinding;
@@ -19,8 +20,8 @@ public class FindTukangActivity extends AppCompatActivity {
         binding = ActivityFindTukangBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         int[] imageList = {R.drawable.santaidulugasih, R.drawable.lethimcook, R.drawable.bludgotbraindamage};
-        int[] ratingList = {R.string.rating,R.string.rating,R.string.rating};
-        int[] jarakList = {R.string.jarak,R.string.jarak,R.string.jarak};
+        String[] ratingList = {getString(R.string.rating),getString(R.string.rating),getString(R.string.rating)};
+        String[] jarakList = {getString(R.string.jarak),getString(R.string.jarak),getString(R.string.jarak)};
         String[] nameList = {"cnunk","kafka","JtKz"};
         String[] descList = {"Terpercaya","Terpercaya","Terpercaya"};
         String[] alamatList = {"JL.mangga no.8","JL.mangga no.8","JL.mangga no.8"};
@@ -29,7 +30,8 @@ public class FindTukangActivity extends AppCompatActivity {
             listData = new ListData(nameList[i], descList[i],alamatList[i], ratingList[i], imageList[i], jarakList[i]);
             dataArrayList.add(listData);
         }
-            listAdapter = new ListAdapter(FindTukangActivity.this, dataArrayList);
+        Log.i("test", "listData image: " + listData.alamat);
+        listAdapter = new ListAdapter(FindTukangActivity.this, dataArrayList);
         binding.listview.setAdapter(listAdapter);
         binding.listview.setClickable(true);
         binding.listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {

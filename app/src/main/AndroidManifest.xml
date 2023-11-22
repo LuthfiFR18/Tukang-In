@@ -21,7 +21,7 @@
             android:name=".TukangDetailedActivity"
             android:exported="false" />
         <activity
-            android:name=".loginActivity"
+            android:name=".FindTukangActivity"
             android:exported="false" />
         <activity
             android:name=".ChatActivity"
@@ -33,7 +33,7 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".FindTukangActivity"
+            android:name=".loginActivity"
             android:exported="false"
             />
         <activity android:theme="@style/Theme.TukangInMain"

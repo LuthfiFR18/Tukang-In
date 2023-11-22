@@ -1,11 +1,15 @@
 package com.example.tukang_in;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.tukang_in.databinding.FragmentServicesBinding;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -52,12 +56,33 @@ public class ServicesFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
     }
 
+    FragmentServicesBinding binding;
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_services, container, false);
+
+        binding = FragmentServicesBinding.inflate(inflater,container,false);
+
+        String[] serviceName = {"Daily Cleaning","AC Cleaning"};
+        int[] serviceImage = {R.drawable.dailycleaning,R.drawable.accleaning};
+
+        GridAdapter gridAdapter = new GridAdapter(requireContext(),serviceName,serviceImage);
+        binding.gridView.setAdapter(gridAdapter);
+
+        binding.gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(requireActivity(), FindTukangActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        return binding.getRoot();
     }
 }
